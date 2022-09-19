@@ -1,4 +1,8 @@
 esercizio_1.js : devo stampare a console la stringa Hello world!! --> cosole.log("Hello world!!")
 esercizio_2.js : devo prendere valori inseriti da utente e stamparli in console sulla stessa riga
 esercizio_3.js : inserire nome e password e vedere se sono corretti.
-esercizio_4.js : prendere numeri da prompt e fare la sommatoria da 0 al numero inserito.
+esercizio_4.js : prendere numero da prompt e fare la sommatoria da 0 al numero inserito.
+esercizio_5.js : prendere numero da prompt e fare la sommatoria di tutti i numeri divisibili per 3 fino al numero inserito, 
+                 usare la funzione resto.
+esercizio_6.js : prendere da input due numeri e fare operazioni matematiche. prima fare le funzioni per le operazioni, 
+                 poi creare degli avvisi che in base a quello che vogliamo fa l'operazione matematica richiesta.              
