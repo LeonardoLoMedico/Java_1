@@ -5,4 +5,6 @@ esercizio_4.js : prendere numero da prompt e fare la sommatoria da 0 al numero i
 esercizio_5.js : prendere numero da prompt e fare la sommatoria di tutti i numeri divisibili per 3 fino al numero inserito, 
                  usare la funzione resto.
 esercizio_6.js : prendere da input due numeri e fare operazioni matematiche. prima fare le funzioni per le operazioni, 
-                 poi creare degli avvisi che in base a quello che vogliamo fa l'operazione matematica richiesta.              
+                 poi creare degli avvisi che in base a quello che vogliamo fa l'operazione matematica richiesta.
+esercizio_7.js : chiedere un nmero all'utente, voglio avere le tabelline di tutti i numeri compresi a quello inserito e 1
+esercizio_8.js : chiedere un numero all'utente, stampare tutti i numeri primi fino a quel numero, un numero è primo se divisivile per se stesso o 1 e ha resto 0          

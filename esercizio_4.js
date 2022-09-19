@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 let ins = prompt("inserire un numero intero: ");
- let sum =0;
+let sum =0;
 for(let i=0;i<=ins;i++){
     
    
