@@ -2,7 +2,7 @@ const prompt = require('prompt-sync')();
 let ins = prompt("Inserisci numero intero: ");
 console.log("I numeri primi fino a "+ins+ " sono: ");
 let arr =[ ];
-let compara = [ ];
+let arrcamp=[];
 for(i=1;i<=ins;i++){
 
     let count =0;
@@ -16,17 +16,19 @@ for(i=1;i<=ins;i++){
         } 
     }
 
-    if(count==2){//console.log(i);
-    //inserisco i numeri trovati in un array
-    arr.push(i)
-    console.log(arr);
+    if(count==2){
+      console.log(i);
+    
   }
 
 }
-let ins1=prompt("Inserisci un numero: ");
 
-for(i=1;i<=ins;i++){
+let ins1=Number(prompt("Inserisci un numero: "));
 
+let campione= ins1+10;
+
+for(i=1;i<=ins1;i++){
+  
   let count =0;
 
   for(k=1;k<=i;k++){
@@ -38,13 +40,61 @@ for(i=1;i<=ins;i++){
       } 
   }
 
-  if(count==2){//console.log(i);
-  //inserisco i numeri trovati in un array
-  arr.push(i)
-  console.log(arr);
+  if(count==2){
+  
+     arr.push(i);
+     
 }
 
 }
+console.log(arr);
+//creo l'array campione
+for(q=1;q<=campione;q++){ //while 
+  
+  let count1 =0;
 
-//prendendo in input un altro numero scrivete la somma fino al numero piu' vicino
-// devo fare la somma dei numeri primi fino al numero primo pù vicino a quello inserito, il numero più vicino può anche essere maggiore di quello inserito
+  for(l=1;l<=q;l++){
+
+      if(q%l==0){
+
+        count1++;
+        
+      } 
+  }
+
+  if(count1==2){
+  
+    arrcamp.push(q);
+   // console.log(arrcamp);
+   //console.log("prima: "+prima+ "dopo: "+dopo );
+}
+
+}
+console.log(arrcamp);
+//let dimensione = arrcamp.length;
+for(i=0;i<arrcamp.length;i++)
+{
+  vicino_prima= Math.abs(ins1- arrcamp[i]);
+  let min=vicino_prima;
+  console.log(vicino_prima);
+  for(l=1;l<i;l++){
+    let vicino =Math.abs(ins1- arrcamp[l]);
+    if(vicino<min){
+      min=vicino;
+    }
+    
+  }
+
+  console.log("minimo "+min);
+  }
+  
+
+
+//trova il più vicino, come?
+//vicino_prima= Math.abs(ins1- arrcamp[i]) mi ritorna tutti valori positivi
+//vicino_dopo=Math
+// devo prendere la differenza più piccola se la differenza
+// è maggiore di zero altrimenti al contrario
+
+
+

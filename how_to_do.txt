@@ -3,7 +3,8 @@ esercizio_2.js : devo prendere valori inseriti da utente e stamparli in console 
 esercizio_3.js : inserire nome e password e vedere se sono corretti.
 esercizio_4.js : prendere numero da prompt e fare la sommatoria da 0 al numero inserito.
 esercizio_5.js : prendere numero da prompt e fare la sommatoria di tutti i numeri divisibili per 3 fino al numero inserito, 
-                 usare la funzione resto.
+                 usare la funzione resto.Rifare la stessa cosa per il numero 7.
+                 Infine permettere all'utente di inserire il secondo numero divisore.
 esercizio_6.js : prendere da input due numeri e fare operazioni matematiche. prima fare le funzioni per le operazioni, 
                  poi creare degli avvisi che in base a quello che vogliamo fa l'operazione matematica richiesta.
 esercizio_7.js : chiedere un nmero all'utente, voglio avere le tabelline di tutti i numeri compresi a quello inserito e 1
