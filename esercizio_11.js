@@ -44,7 +44,7 @@ for(i=0;i<dimensione;i++)
 }
 console.log(media);
 
-
+//ordinare array
 /*arr.sort(function(a, b) {
   return a - b;
 });
@@ -58,9 +58,21 @@ for(i=0;i<arr.length;i++)
     let vicino =Math.abs(media- arr[l]);
     if(vicino<min){
       min=vicino;
-      console.log("minimo "+arr[l]);
+      
     }
-    console.log("minimo "+arr[l]);
+    console.log("Il valore più vicino alla media è: "+arr[l]);
+    if(arr[l]==media){
+        console.log("il numero "+arr[l]+" é presente nell'array ed è uguale alla media: "+media);
+        }else{
+           let distanza_prima= media-arr[l-1];
+           let distanza_dopo=arr[l]-media;
+           console.log("La media dista dal numero prima: "+distanza_prima);
+           console.log("La media dista dal numero dopo: "+distanza_dopo);
+           
+        }
+    // specificate se il numero della media e' presente nell'array,
+    // oppure indicate quanto dista dai due numeri piu' vicini
+    
   }
   //console.log("minimo "+min);
   }
