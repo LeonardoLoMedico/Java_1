@@ -31,50 +31,49 @@ console.log("Il valore massimo inserito è: "+max);
 let min = Math.min(...arr);
 console.log("Il valore minimo inserito è: "+min);
 // devo trovare la media sommo tutti gli elementi e divido per la dimensione
-console.log("La media dell'array è: ");
+
 let sum =0;
 let media =0;
 
 for(i=0;i<dimensione;i++)
 {
     //faccio la sommatori dell'array
-    sum= arr[i]+arr[i];
+    sum= sum +arr[i];
+    // console.log("somma"+sum);
     media= sum/dimensione;
     
 }
-console.log(media);
+console.log("La media dell'array è: "+media);
 
-//ordinare array
-/*arr.sort(function(a, b) {
-  return a - b;
-});
-console.log(arr);*/
-for(i=0;i<arr.length;i++)
+
+
+let val = 0; 
+let diff=0;
+let minDiff = max;
+
+
+for(let i=0;i<arr.length;i++)
 {
-  let vicino_prima= Math.abs(media- arr[i]);
-  let min=vicino_prima;
-  
-  for(l=1;l<i;l++){
-    let vicino =Math.abs(media- arr[l]);
-    if(vicino<min){
-      min=vicino;
-      
-    }
-    console.log("Il valore più vicino alla media è: "+arr[l]);
-    if(arr[l]==media){
-        console.log("il numero "+arr[l]+" é presente nell'array ed è uguale alla media: "+media);
-        }else{
-           let distanza_prima= media-arr[l-1];
-           let distanza_dopo=arr[l]-media;
-           console.log("La media dista dal numero prima: "+distanza_prima);
-           console.log("La media dista dal numero dopo: "+distanza_dopo);
-           
-        }
-    // specificate se il numero della media e' presente nell'array,
-    // oppure indicate quanto dista dai due numeri piu' vicini
+
+diff = Math.abs(media-arr[i]);
+
+if(minDiff > diff){
+minDiff = diff;
+val = arr[i];
+
+}
+}
+console.log("valore più vicino "+val);
+
+if(val==media){
+  console.log("il numero "+val+" é presente nell'array ed è uguale alla media: "+media);
+ 
+  }else{
+    let distanza_prima=val -media;
+    let distanza_dopo=media-val;
+    console.log("La media dista dal numero prima: "+distanza_prima);
+    console.log("La media dista dal numero dopo: "+distanza_dopo);
     
-  }
-  //console.log("minimo "+min);
-  }
+        }
 
 
